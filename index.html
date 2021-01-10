@@ -9,7 +9,23 @@
 	<title></title>
 </head>
 <body>
-<!------ Include the above in your HEAD tag ---------->
+<div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ 	<a class="navbar-brand" href="#">WIFIRE</a>
+ 	<ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+  	</ul>
+</div>
+<!--Готовая таблицаdark
+TODO
+Добавить столбец с оптион типом продажи
+Добавить столбец ЛС
+Добавить столбец суммы -->
 <div class="container">
     <div class="row clearfix">
     	<div class="col-md-12 table-responsive">
@@ -17,16 +33,16 @@
 				<thead>
 					<tr >
 						<th class="text-center">
-							Name
+							Номер заявки
 						</th>
 						<th class="text-center">
-							Email
+							Предмет продажи
 						</th>
 						<th class="text-center">
-							Notes
+							Заметка
 						</th>
     					<th class="text-center">
-							Option
+							Статус
 						</th>
         				<th class="text-center" style="border-top: 1px solid #ffffff; border-right: 1px solid #ffffff;">
 						</th>
@@ -35,20 +51,30 @@
 				<tbody>
     				<tr id='addr0' data-id="0" class="hidden">
 						<td data-name="name">
-						    <input type="text" name='name0'  placeholder='Name' class="form-control"/>
+						    <input type="text" name='name0'  placeholder='Req*******' class="form-control"/>
 						</td>
-						<td data-name="mail">
-						    <input type="text" name='mail0' placeholder='Email' class="form-control"/>
+						<td data-name="sel">
+						    <select name="sel0">
+        				        <option value="">Выберите статус</option>
+    					        <option value="homeintern">Интернет</option>
+        				        <option value="2">ТВ</option>
+        				        <option value="3">Объединяй</option>
+        				        <option value="1">Для Дома</option>
+        				        <option value="1">Рассрочка</option>
+        				        <option value="1">Оборудование</option>
+						    </select>
 						</td>
 						<td data-name="desc">
 						    <textarea name="desc0" placeholder="Description" class="form-control"></textarea>
 						</td>
     					<td data-name="sel">
-						    <select name="sel0">
-        				        <option value="">Select Option</option>
-    					        <option value="1">Option 1</option>
-        				        <option value="2">Option 2</option>
-        				        <option value="3">Option 3</option>
+						    <select name="statusselect">
+        				        <option value="">Выберите статус</option>
+    					        <option value="postponed">Отложено</option>
+        				        <option value="completed">Выполнено</option>
+        				        <option value="inprogress">В работе</option>
+        				        <option value="remaked">Пересоздана</option>
+        				        <option value="canceled">Отменена абонентом/специалистом</option>
 						    </select>
 						</td>
                         <td data-name="del">
@@ -59,7 +85,7 @@
 			</table>
 		</div>
 	</div>
-	<a id="add_row" class="btn btn-primary float-right">Add Row</a>
+	<a id="add_row" class="btn btn-primary float-right">Добавить заявку</a>
 </div>
 
 </body>
