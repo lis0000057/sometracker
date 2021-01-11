@@ -42,6 +42,9 @@ TODO
 							Заметка
 						</th>
     					<th class="text-center">
+							Цена
+						</th>
+						<th class="text-center">
 							Статус
 						</th>
         				<th class="text-center" style="border-top: 1px solid #ffffff; border-right: 1px solid #ffffff;">
@@ -53,21 +56,24 @@ TODO
 						<td data-name="name">
 						    <input type="text" name='name0'  placeholder='Req*******' class="form-control"/>
 						</td>
-						<td data-name="sel">
-						    <select name="sel0">
-        				        <option value="">Выберите статус</option>
+						<td data-name="tsel">
+						    <select name="typesel">
+        				        <option value="">Предмет продажи</option>
     					        <option value="homeintern">Интернет</option>
-        				        <option value="2">ТВ</option>
-        				        <option value="3">Объединяй</option>
-        				        <option value="1">Для Дома</option>
-        				        <option value="1">Рассрочка</option>
-        				        <option value="1">Оборудование</option>
+        				        <option value="TV">ТВ</option>
+        				        <option value="FMC">Объединяй</option>
+        				        <option value="ForHome">Для Дома</option>
+        				        <option value="devicelong">Рассрочка</option>
+        				        <option value="device">Оборудование</option>
 						    </select>
 						</td>
-						<td data-name="desc">
-						    <textarea name="desc0" placeholder="Description" class="form-control"></textarea>
+						<td data-name="reas">
+						    <textarea name="reason" placeholder="Диалог" class="form-control"></textarea>
 						</td>
-    					<td data-name="sel">
+						<td data-name="pric">
+						    <textarea name="price" placeholder="Цена" class="form-control"></textarea>
+						</td>
+    					<td data-name="ssel">
 						    <select name="statusselect">
         				        <option value="">Выберите статус</option>
     					        <option value="postponed">Отложено</option>
